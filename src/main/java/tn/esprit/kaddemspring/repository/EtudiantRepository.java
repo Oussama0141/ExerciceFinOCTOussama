@@ -18,7 +18,7 @@ import java.util.Set;
 @Repository
 public interface EtudiantRepository extends JpaRepository<Etudiant, Long> {
 
-    @Query(value = "Select * FROM  Utilisateur e where e.departement_id_departement = ?1", nativeQuery = true)
+    @Query(value = "Select * FROM  utilisateur e where e.departement_id_departement = ?1", nativeQuery = true)
     Set<Etudiant> getEtudiantsByDepartement(long idDepartement);
 
     @Query(value = "SELECT * from etudiants e " +
