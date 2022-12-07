@@ -12,7 +12,7 @@ import tn.esprit.kaddemspring.services.DepartementServices;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/Departement")
 public class DepartementControllers {

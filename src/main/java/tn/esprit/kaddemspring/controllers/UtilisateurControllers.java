@@ -11,7 +11,7 @@ import tn.esprit.kaddemspring.services.UtilisateurServices;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/Utilisateur")
 public class UtilisateurControllers {

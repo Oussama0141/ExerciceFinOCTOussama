@@ -11,7 +11,7 @@ import tn.esprit.kaddemspring.services.EquipeServices;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/Equipe")
 public class EquipeControllers {

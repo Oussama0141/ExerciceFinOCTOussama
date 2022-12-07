@@ -12,7 +12,7 @@ import tn.esprit.kaddemspring.services.ContratServices;
 import java.util.List;
 
 
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+@CrossOrigin("*")
     @RestController
     @RequestMapping("/Contrat")
     public class ContratControllers {
