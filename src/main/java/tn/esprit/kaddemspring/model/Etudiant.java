@@ -1,5 +1,6 @@
 package tn.esprit.kaddemspring.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,6 +24,7 @@ public class Etudiant extends Utilisateur implements Serializable {
     private Departement departement;
     @OneToMany(mappedBy = "etudiant")
     private Set<Contrat> ContratSet;
+    @JsonIgnore
     @ManyToMany(mappedBy = "EtudiantSet",cascade = CascadeType.ALL)
     private Set<Equipe> EquipeSet;
 
