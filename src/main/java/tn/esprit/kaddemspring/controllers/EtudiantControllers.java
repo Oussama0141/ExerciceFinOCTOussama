@@ -13,7 +13,7 @@ import tn.esprit.kaddemspring.services.EtudiantServices;
 import java.util.List;
 import java.util.Set;
 
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/etudiant")
 public class EtudiantControllers {
